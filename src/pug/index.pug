@@ -1,0 +1,378 @@
+html(lang="en")
+    head
+        title Casa Volcán — Homepage
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        link(rel="preconnect", href="https://fonts.gstatic.com")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,500,600,700,800,900|Playfair+Display:400,500,600,700,800,900&subset=latin")
+        link(rel="stylesheet", href="css/tailwind/tailwind.min.css")
+        link(rel="icon", type="image/png", sizes="32x32", href="shuffle-for-tailwind.png")
+    body(class="antialiased bg-body text-body font-body")
+        div(class="")
+            nav(class="w-full bg-stone-950/95 backdrop-blur-sm border-b border-amber-900/20")
+                div(class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between")
+                    a(href="#", class="flex items-center gap-3")
+                        svg(class="w-8 h-8 text-amber-500", viewbox="0 0 24 24", fill="currentColor")
+                            path(d="M12 2C13.1 2 14 2.9 14 4C14 4.74 13.6 5.39 13 5.73V7H14C17.31 7 20 9.69 20 13V20C20 21.1 19.1 22 18 22H6C4.9 22 4 21.1 4 20V13C4 9.69 6.69 7 10 7H11V5.73C10.4 5.39 10 4.74 10 4C10 2.9 10.9 2 12 2ZM12 9C9.79 9 8 10.79 8 13H16C16 10.79 14.21 9 12 9Z")
+                        span(class="text-xl tracking-widest text-stone-100 uppercase font-heading") Casa Volcán
+                    div(class="hidden md:flex items-center gap-10")
+                        a(href="#story", class="text-stone-400 hover:text-amber-500 transition-colors text-sm tracking-widest uppercase") Story
+                        |             
+                        a(href="#collection", class="text-stone-400 hover:text-amber-500 transition-colors text-sm tracking-widest uppercase") Collection
+                        |             
+                        a(href="#process", class="text-stone-400 hover:text-amber-500 transition-colors text-sm tracking-widest uppercase") Process
+                        |             
+                        a(href="#sustainability", class="text-stone-400 hover:text-amber-500 transition-colors text-sm tracking-widest uppercase") Tierra
+                        |             
+                        a(href="#locate", class="px-5 py-2 border border-amber-600 text-amber-500 hover:bg-amber-600 hover:text-stone-950 transition-all text-sm tracking-widest uppercase") Find Us
+                    button(class="md:hidden text-stone-100 mobile-menu-toggle")
+                        svg(class="w-6 h-6", fill="none", stroke="currentColor", viewbox="0 0 24 24")
+                            path(stroke-linecap="round", stroke-linejoin="round", stroke-width="2", d="M4 6h16M4 12h16M4 18h16")
+            section(class="relative min-h-screen bg-stone-950 overflow-hidden flex items-center hero-section")
+                div(class="absolute inset-0 bg-gradient-to-br from-stone-950 via-stone-900 to-emerald-950/30")
+                div(class="absolute inset-0 opacity-20", style="background-image: url('https://images.unsplash.com/photo-1585951237313-1979e4df7385?w=1920&q=80'); background-size: cover; background-position: center;")
+                div(class="absolute inset-0 bg-gradient-to-t from-stone-950 via-transparent to-stone-950/50")
+                div(class="absolute top-1/4 left-1/4 w-96 h-96 bg-amber-600/10 rounded-full blur-3xl animate-pulse")
+                div(class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-emerald-800/10 rounded-full blur-3xl")
+                div(class="relative z-10 max-w-7xl mx-auto px-6 py-32 grid lg:grid-cols-2 gap-16 items-center")
+                    div(class="space-y-8 hero-content")
+                        span(class="inline-block text-amber-500 text-sm tracking-[0.4em] uppercase border-l-2 border-amber-500 pl-4") Tequila Artesanal · Jalisco, México
+                        h1(class="text-5xl md:text-7xl lg:text-8xl text-stone-100 leading-none font-heading")
+                            span(class="block") Born of
+                            |               
+                            span(class="block text-amber-500 italic") Fire
+                            |               
+                            span(class="block") & Earth
+                        p(class="text-xl text-stone-400 max-w-lg leading-relaxed") Where volcanic soil meets centuries of tradition. Each drop carries the soul of Jalisco's highlands—crafted slowly, savored eternally.
+                        div(class="flex flex-wrap gap-4 pt-4")
+                            a(href="#collection", class="group inline-flex items-center gap-3 bg-amber-600 text-stone-950 px-8 py-4 text-sm tracking-widest uppercase hover:bg-amber-500 transition-all")
+                                span Explore Collection
+                                svg(class="w-4 h-4 group-hover:translate-x-1 transition-transform", fill="none", stroke="currentColor", viewbox="0 0 24 24")
+                                    path(stroke-linecap="round", stroke-linejoin="round", stroke-width="2", d="M17 8l4 4m0 0l-4 4m4-4H3")
+                            |               
+                            a(href="#story", class="inline-flex items-center gap-3 border border-stone-600 text-stone-300 px-8 py-4 text-sm tracking-widest uppercase hover:border-amber-500 hover:text-amber-500 transition-all") Our Story
+                    div(class="relative hero-bottle")
+                        div(class="absolute inset-0 bg-gradient-radial from-amber-500/20 via-transparent to-transparent")
+                        img(src="images/54cd3-1772983460.jpeg", alt="Casa Volcán Tequila Bottle", class="relative z-10 mx-auto max-h-[600px] object-contain drop-shadow-2xl bottle-float")
+                        div(class="absolute -bottom-8 left-1/2 -translate-x-1/2 w-48 h-8 bg-stone-950/50 rounded-full blur-xl")
+                div(class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-stone-500 scroll-indicator")
+                    span(class="text-xs tracking-widest uppercase") Scroll
+                    svg(class="w-5 h-5 animate-bounce", fill="none", stroke="currentColor", viewbox="0 0 24 24")
+                        path(stroke-linecap="round", stroke-linejoin="round", stroke-width="2", d="M19 14l-7 7m0 0l-7-7m7 7V3")
+            section(id="story", class="relative bg-stone-950 py-32 overflow-hidden")
+                div(class="absolute top-0 right-0 w-1/2 h-full opacity-30", style="background-image: url('https://images.unsplash.com/photo-1551410224-699683e15636?w=1200&q=80'); background-size: cover; background-position: center;")
+                div(class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-r from-stone-950 via-stone-950/80 to-transparent")
+                div(class="relative z-10 max-w-7xl mx-auto px-6")
+                    div(class="grid lg:grid-cols-2 gap-20 items-center")
+                        div(class="space-y-8 fade-up")
+                            span(class="text-amber-500 text-sm tracking-[0.4em] uppercase") Our Origin
+                            h2(class="text-4xl md:text-6xl text-stone-100 font-heading leading-tight")
+                                span(class="block") Rooted in
+                                |                 
+                                span(class="text-amber-500 italic") Volcanic
+                                |                 
+                                span Legacy
+                            div(class="space-y-6 text-stone-400 leading-relaxed")
+                                p In the shadow of the Tequila Volcano, where mineral-rich red soil nourishes blue Weber agave for seven patient years, Casa Volcán was born from a simple truth: exceptional tequila cannot be rushed.
+                                p Our jimadores—third-generation harvesters—read the land like poetry. They know when each piña reaches its peak, when sugars concentrate to perfection, when the moment arrives to harvest by hand, just as their grandfathers did.
+                                p This is not production. This is devotion.
+                            div(class="flex items-center gap-8 pt-4")
+                                div(class="text-center")
+                                    span(class="block text-4xl text-amber-500 font-heading") 1927
+                                    |                   
+                                    span(class="text-xs text-stone-500 tracking-widest uppercase") Founded
+                                div(class="w-px h-12 bg-stone-700")
+                                div(class="text-center")
+                                    span(class="block text-4xl text-amber-500 font-heading") 7
+                                    |                   
+                                    span(class="text-xs text-stone-500 tracking-widest uppercase") Year Agave
+                                div(class="w-px h-12 bg-stone-700")
+                                div(class="text-center")
+                                    span(class="block text-4xl text-amber-500 font-heading") 100%
+                                    |                   
+                                    span(class="text-xs text-stone-500 tracking-widest uppercase") Artisanal
+                        div(class="relative fade-up", style="animation-delay: 0.2s;")
+                            div(class="absolute -inset-4 bg-gradient-to-br from-amber-600/20 to-emerald-900/20 blur-2xl")
+                            img(src="https://images.unsplash.com/photo-1560493676-04071c5f467b?w=800&q=80", alt="Agave Fields at Sunset", class="relative w-full aspect-[4/5] object-cover")
+                            div(class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-stone-950 to-transparent")
+                                blockquote(class="text-stone-300 italic font-heading text-lg") "We don't make tequila. We honor the agave's journey."
+                                cite(class="text-amber-500 text-sm tracking-widest uppercase block mt-2") — Don Rafael Mendoza, Maestro Tequilero
+            section(id="collection", class="relative bg-stone-900 py-32")
+                div(xmlns="http://www.w3.org/2000/svg", class="absolute inset-0 opacity-5", style="background-image: url('data:image/svg+xml,%3Csvg width=", height="60", viewbox="0 0 60 60", fill="none", fill-rule="evenodd", fill-opacity="0.4", d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z", g="", svg="")
+                div(class="relative z-10 max-w-7xl mx-auto px-6")
+                    div(class="text-center mb-20 fade-up")
+                        span(class="text-amber-500 text-sm tracking-[0.4em] uppercase") The Collection
+                        h2(class="text-4xl md:text-6xl text-stone-100 font-heading mt-4")
+                            | Four 
+                            span(class="text-amber-500 italic") Expressions
+                        p(class="text-stone-400 mt-6 max-w-2xl mx-auto") Each expression represents a chapter in agave's transformation—from crystal clarity to amber depth.
+                    div(class="grid md:grid-cols-2 lg:grid-cols-4 gap-8")
+                        div(class="group relative bg-stone-950 p-8 border border-stone-800 hover:border-amber-600/50 transition-all duration-500 product-card fade-up")
+                            div(class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-amber-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity")
+                            div(class="relative mb-8 overflow-hidden")
+                                div(class="absolute inset-0 bg-gradient-to-b from-amber-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity")
+                                img(src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=400&q=80", alt="Blanco Tequila", class="w-full h-64 object-contain group-hover:scale-105 transition-transform duration-700")
+                            span(class="text-xs text-amber-500 tracking-[0.3em] uppercase") Unaged
+                            h3(class="text-2xl text-stone-100 font-heading mt-2") Blanco
+                            p(class="text-stone-500 text-sm mt-4 leading-relaxed") Pure agave essence. Crystal clear with notes of citrus, white pepper, and fresh herbs.
+                            div(class="mt-6 pt-6 border-t border-stone-800")
+                                div(class="flex justify-between text-xs text-stone-500 mb-2")
+                                    span Aroma
+                                    |                   
+                                    span(class="text-stone-300") Citrus, Agave, Minerals
+                                div(class="flex justify-between text-xs text-stone-500")
+                                    span Serve
+                                    |                   
+                                    span(class="text-stone-300") Chilled, Sipped Pure
+                            a(href="#", class="mt-6 flex items-center justify-center gap-2 w-full py-3 border border-stone-700 text-stone-400 hover:border-amber-500 hover:text-amber-500 transition-all text-sm tracking-widest uppercase")
+                                span Details
+                                svg(class="w-4 h-4", fill="none", stroke="currentColor", viewbox="0 0 24 24")
+                                    path(stroke-linecap="round", stroke-linejoin="round", stroke-width="2", d="M17 8l4 4m0 0l-4 4m4-4H3")
+                        div(class="group relative bg-stone-950 p-8 border border-stone-800 hover:border-amber-600/50 transition-all duration-500 product-card fade-up", style="animation-delay: 0.1s;")
+                            div(class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-amber-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity")
+                            div(class="relative mb-8 overflow-hidden")
+                                img(src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=400&q=80", alt="Reposado Tequila", class="w-full h-64 object-contain group-hover:scale-105 transition-transform duration-700")
+                            span(class="text-xs text-amber-500 tracking-[0.3em] uppercase") 6 Months Oak
+                            h3(class="text-2xl text-stone-100 font-heading mt-2") Reposado
+                            p(class="text-stone-500 text-sm mt-4 leading-relaxed") Rested perfection. Golden hue with caramel, vanilla, and gentle oak warmth.
+                            div(class="mt-6 pt-6 border-t border-stone-800")
+                                div(class="flex justify-between text-xs text-stone-500 mb-2")
+                                    span Aroma
+                                    |                   
+                                    span(class="text-stone-300") Vanilla, Oak, Honey
+                                div(class="flex justify-between text-xs text-stone-500")
+                                    span Serve
+                                    |                   
+                                    span(class="text-stone-300") Neat, Old Fashioned
+                            a(href="#", class="mt-6 flex items-center justify-center gap-2 w-full py-3 border border-stone-700 text-stone-400 hover:border-amber-500 hover:text-amber-500 transition-all text-sm tracking-widest uppercase")
+                                span Details
+                                svg(class="w-4 h-4", fill="none", stroke="currentColor", viewbox="0 0 24 24")
+                                    path(stroke-linecap="round", stroke-linejoin="round", stroke-width="2", d="M17 8l4 4m0 0l-4 4m4-4H3")
+                        div(class="group relative bg-stone-950 p-8 border border-stone-800 hover:border-amber-600/50 transition-all duration-500 product-card fade-up", style="animation-delay: 0.2s;")
+                            div(class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-amber-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity")
+                            div(class="relative mb-8 overflow-hidden")
+                                img(src="https://images.unsplash.com/photo-1609951651556-5334e2706168?w=400&q=80", alt="Añejo Tequila", class="w-full h-64 object-contain group-hover:scale-105 transition-transform duration-700")
+                            span(class="text-xs text-amber-500 tracking-[0.3em] uppercase") 18 Months Oak
+                            h3(class="text-2xl text-stone-100 font-heading mt-2") Añejo
+                            p(class="text-stone-500 text-sm mt-4 leading-relaxed") Deep amber elegance. Rich notes of dark chocolate, dried fruit, and toasted wood.
+                            div(class="mt-6 pt-6 border-t border-stone-800")
+                                div(class="flex justify-between text-xs text-stone-500 mb-2")
+                                    span Aroma
+                                    |                   
+                                    span(class="text-stone-300") Chocolate, Tobacco, Spice
+                                div(class="flex justify-between text-xs text-stone-500")
+                                    span Serve
+                                    |                   
+                                    span(class="text-stone-300") Neat, Digestif
+                            a(href="#", class="mt-6 flex items-center justify-center gap-2 w-full py-3 border border-stone-700 text-stone-400 hover:border-amber-500 hover:text-amber-500 transition-all text-sm tracking-widest uppercase")
+                                span Details
+                                svg(class="w-4 h-4", fill="none", stroke="currentColor", viewbox="0 0 24 24")
+                                    path(stroke-linecap="round", stroke-linejoin="round", stroke-width="2", d="M17 8l4 4m0 0l-4 4m4-4H3")
+                        div(class="group relative bg-stone-950 p-8 border border-amber-600/30 hover:border-amber-500 transition-all duration-500 product-card fade-up", style="animation-delay: 0.3s;")
+                            div(class="absolute -top-3 left-1/2 -translate-x-1/2 bg-amber-600 text-stone-950 text-xs tracking-widest uppercase px-4 py-1") Limited
+                            div(class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-amber-500 to-transparent")
+                            div(class="relative mb-8 overflow-hidden")
+                                img(src="https://images.unsplash.com/photo-1578911373434-0cb395d2cbfb?w=400&q=80", alt="Extra Añejo Tequila", class="w-full h-64 object-contain group-hover:scale-105 transition-transform duration-700")
+                            span(class="text-xs text-amber-500 tracking-[0.3em] uppercase") 4 Years Oak
+                            h3(class="text-2xl text-stone-100 font-heading mt-2") Extra Añejo
+                            p(class="text-stone-500 text-sm mt-4 leading-relaxed") Our crown jewel. Mahogany depths with cognac complexity and eternal finish.
+                            div(class="mt-6 pt-6 border-t border-stone-800")
+                                div(class="flex justify-between text-xs text-stone-500 mb-2")
+                                    span Aroma
+                                    |                   
+                                    span(class="text-stone-300") Leather, Fig, Cedar
+                                div(class="flex justify-between text-xs text-stone-500")
+                                    span Serve
+                                    |                   
+                                    span(class="text-stone-300") Contemplation
+                            a(href="#", class="mt-6 flex items-center justify-center gap-2 w-full py-3 bg-amber-600 text-stone-950 hover:bg-amber-500 transition-all text-sm tracking-widest uppercase")
+                                span Reserve
+                                svg(class="w-4 h-4", fill="none", stroke="currentColor", viewbox="0 0 24 24")
+                                    path(stroke-linecap="round", stroke-linejoin="round", stroke-width="2", d="M17 8l4 4m0 0l-4 4m4-4H3")
+            section(id="process", class="relative bg-stone-950 py-32 overflow-hidden")
+                div(class="max-w-7xl mx-auto px-6")
+                    div(class="text-center mb-20 fade-up")
+                        span(class="text-amber-500 text-sm tracking-[0.4em] uppercase") The Craft
+                        h2(class="text-4xl md:text-6xl text-stone-100 font-heading mt-4")
+                            | From 
+                            span(class="text-amber-500 italic") Earth
+                            |  to Glass
+                    div(class="relative")
+                        div(class="absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-amber-600/50 to-transparent hidden lg:block")
+                        div(class="space-y-24")
+                            div(class="grid lg:grid-cols-2 gap-12 items-center fade-up")
+                                div(class="lg:pr-20")
+                                    span(class="text-6xl text-amber-600/20 font-heading") 01
+                                    h3(class="text-3xl text-stone-100 font-heading mt-2") La Jima
+                                    p(class="text-stone-400 mt-4 leading-relaxed") Our jimadores select only mature piñas—each weighing up to 50 kilos—harvested at peak sweetness after seven years of patient growth in volcanic soil.
+                                    ul(class="mt-6 space-y-2 text-stone-500 text-sm")
+                                        li(class="flex items-center gap-3")
+                                            svg(class="w-4 h-4 text-amber-500", fill="currentColor", viewbox="0 0 20 20")
+                                                path(fill-rule="evenodd", d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z", clip-rule="evenodd")
+                                            span Hand-selected by master jimadores
+                                        li(class="flex items-center gap-3")
+                                            svg(class="w-4 h-4 text-amber-500", fill="currentColor", viewbox="0 0 20 20")
+                                                path(fill-rule="evenodd", d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z", clip-rule="evenodd")
+                                            span Highland terroir, mineral richness
+                                div(class="relative")
+                                    img(src="https://images.unsplash.com/photo-1600079678654-73d9488e4d12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMzIzMzB8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjB0ZXF1aWxhJTIwYm90dGxlfGVufDB8Mnx8fDE3NzI5ODEyMzV8MA&ixlib=rb-4.1.0&q=80&w=1080&w=450", alt="Agave Harvesting", class="w-full aspect-[4/3] object-cover")
+                                    div(class="absolute inset-0 bg-gradient-to-r from-stone-950/50 to-transparent")
+                            div(class="grid lg:grid-cols-2 gap-12 items-center fade-up")
+                                div(class="relative lg:order-2 lg:pl-20")
+                                    span(class="text-6xl text-amber-600/20 font-heading") 02
+                                    h3(class="text-3xl text-stone-100 font-heading mt-2") Slow Cooking
+                                    p(class="text-stone-400 mt-4 leading-relaxed") Traditional stone ovens slow-cook piñas for 72 hours, converting complex starches to fermentable sugars while developing deep caramel notes.
+                                    ul(class="mt-6 space-y-2 text-stone-500 text-sm")
+                                        li(class="flex items-center gap-3")
+                                            svg(class="w-4 h-4 text-amber-500", fill="currentColor", viewbox="0 0 20 20")
+                                                path(fill-rule="evenodd", d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z", clip-rule="evenodd")
+                                            span Traditional brick hornos
+                                        li(class="flex items-center gap-3")
+                                            svg(class="w-4 h-4 text-amber-500", fill="currentColor", viewbox="0 0 20 20")
+                                                path(fill-rule="evenodd", d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z", clip-rule="evenodd")
+                                            span 72-hour slow roast
+                                div(class="relative lg:order-1")
+                                    img(src="https://images.unsplash.com/photo-1516594798947-e65505dbb29d?w=800&q=80", alt="Stone Ovens", class="w-full aspect-[4/3] object-cover")
+                                    div(class="absolute inset-0 bg-gradient-to-l from-stone-950/50 to-transparent")
+                            div(class="grid lg:grid-cols-2 gap-12 items-center fade-up")
+                                div(class="lg:pr-20")
+                                    span(class="text-6xl text-amber-600/20 font-heading") 03
+                                    h3(class="text-3xl text-stone-100 font-heading mt-2") Copper Distillation
+                                    p(class="text-stone-400 mt-4 leading-relaxed") Double distillation in hand-hammered copper pot stills—a method unchanged for generations—extracts only the purest heart of the spirit.
+                                    ul(class="mt-6 space-y-2 text-stone-500 text-sm")
+                                        li(class="flex items-center gap-3")
+                                            svg(class="w-4 h-4 text-amber-500", fill="currentColor", viewbox="0 0 20 20")
+                                                path(fill-rule="evenodd", d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z", clip-rule="evenodd")
+                                            span Small-batch copper stills
+                                        li(class="flex items-center gap-3")
+                                            svg(class="w-4 h-4 text-amber-500", fill="currentColor", viewbox="0 0 20 20")
+                                                path(fill-rule="evenodd", d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z", clip-rule="evenodd")
+                                            span Heart cut selection
+                                div(class="relative")
+                                    img(src="https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=800&q=80", alt="Copper Stills", class="w-full aspect-[4/3] object-cover")
+                                    div(class="absolute inset-0 bg-gradient-to-r from-stone-950/50 to-transparent")
+            section(id="sustainability", class="relative bg-emerald-950 py-32 overflow-hidden")
+                div(class="absolute inset-0 opacity-10", style="background-image: url('https://images.unsplash.com/photo-1586348943529-beaae6c28db9?w=1920&q=80'); background-size: cover; background-position: center;")
+                div(class="absolute inset-0 bg-gradient-to-b from-emerald-950 via-emerald-950/95 to-stone-950")
+                div(class="relative z-10 max-w-7xl mx-auto px-6")
+                    div(class="text-center mb-20 fade-up")
+                        span(class="text-amber-500 text-sm tracking-[0.4em] uppercase") Sustainability
+                        h2(class="text-4xl md:text-6xl text-stone-100 font-heading mt-4")
+                            | Guardians of 
+                            span(class="text-emerald-400 italic") Tierra
+                        p(class="text-stone-400 mt-6 max-w-2xl mx-auto") Our commitment extends beyond the bottle. We nurture the land that gives us everything.
+                    div(class="grid md:grid-cols-3 gap-8")
+                        div(class="bg-stone-950/50 backdrop-blur-sm p-10 border border-emerald-800/30 fade-up")
+                            div(class="w-16 h-16 bg-emerald-900/50 rounded-full flex items-center justify-center mb-6")
+                                svg(class="w-8 h-8 text-emerald-400", fill="none", stroke="currentColor", viewbox="0 0 24 24")
+                                    path(stroke-linecap="round", stroke-linejoin="round", stroke-width="1.5", d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8")
+                            h3(class="text-xl text-stone-100 font-heading") Agave Replanting
+                            p(class="text-stone-400 mt-4 text-sm leading-relaxed") For every agave harvested, we plant three. Our nursery sustains 200,000 plants annually, ensuring future generations inherit thriving fields.
+                            span(class="inline-block mt-6 text-emerald-400 text-3xl font-heading") 3:1
+                            |               
+                            span(class="block text-stone-500 text-xs tracking-widest uppercase") Replanting Ratio
+                        div(class="bg-stone-950/50 backdrop-blur-sm p-10 border border-emerald-800/30 fade-up", style="animation-delay: 0.1s;")
+                            div(class="w-16 h-16 bg-emerald-900/50 rounded-full flex items-center justify-center mb-6")
+                                svg(class="w-8 h-8 text-emerald-400", fill="none", stroke="currentColor", viewbox="0 0 24 24")
+                                    path(stroke-linecap="round", stroke-linejoin="round", stroke-width="1.5", d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z")
+                            h3(class="text-xl text-stone-100 font-heading") Water Stewardship
+                            p(class="text-stone-400 mt-4 text-sm leading-relaxed") Closed-loop water systems reclaim 85% of process water. Our distillery operates as a net-positive contributor to local aquifers.
+                            span(class="inline-block mt-6 text-emerald-400 text-3xl font-heading") 85%
+                            |               
+                            span(class="block text-stone-500 text-xs tracking-widest uppercase") Water Reclaimed
+                        div(class="bg-stone-950/50 backdrop-blur-sm p-10 border border-emerald-800/30 fade-up", style="animation-delay: 0.2s;")
+                            div(class="w-16 h-16 bg-emerald-900/50 rounded-full flex items-center justify-center mb-6")
+                                svg(class="w-8 h-8 text-emerald-400", fill="none", stroke="currentColor", viewbox="0 0 24 24")
+                                    path(stroke-linecap="round", stroke-linejoin="round", stroke-width="1.5", d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z")
+                            h3(class="text-xl text-stone-100 font-heading") Community First
+                            p(class="text-stone-400 mt-4 text-sm leading-relaxed") 40% of our workforce comes from local farming families. We fund education programs and healthcare for jimador communities.
+                            span(class="inline-block mt-6 text-emerald-400 text-3xl font-heading") 127
+                            |               
+                            span(class="block text-stone-500 text-xs tracking-widest uppercase") Local Families
+            section(id="locate", class="relative bg-stone-950 py-32")
+                div(class="max-w-7xl mx-auto px-6")
+                    div(class="grid lg:grid-cols-2 gap-16 items-center")
+                        div(class="fade-up")
+                            span(class="text-amber-500 text-sm tracking-[0.4em] uppercase") Find Us
+                            h2(class="text-4xl md:text-5xl text-stone-100 font-heading mt-4")
+                                | Experience 
+                                span(class="text-amber-500 italic") Casa Volcán
+                            p(class="text-stone-400 mt-6 leading-relaxed") Available at select premium retailers, luxury hotels, and fine dining establishments. Enter your location to discover where to purchase or experience our tequila.
+                            div(class="mt-10 space-y-4")
+                                div(class="relative")
+                                    input(type="text", placeholder="Enter your city or zip code", class="w-full bg-stone-900 border border-stone-700 text-stone-100 px-6 py-4 pr-14 focus:border-amber-500 focus:outline-none transition-colors placeholder-stone-500")
+                                    button(class="absolute right-4 top-1/2 -translate-y-1/2 text-amber-500 hover:text-amber-400 transition-colors")
+                                        svg(class="w-6 h-6", fill="none", stroke="currentColor", viewbox="0 0 24 24")
+                                            path(stroke-linecap="round", stroke-linejoin="round", stroke-width="2", d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z")
+                                div(class="flex gap-4")
+                                    a(href="#", class="flex-1 bg-amber-600 text-stone-950 py-4 text-center text-sm tracking-widest uppercase hover:bg-amber-500 transition-colors") Locate Retailers
+                                    |                   
+                                    a(href="#", class="flex-1 border border-stone-600 text-stone-300 py-4 text-center text-sm tracking-widest uppercase hover:border-amber-500 hover:text-amber-500 transition-all") Buy Online
+                            div(class="mt-12 pt-8 border-t border-stone-800")
+                                p(class="text-stone-500 text-sm mb-4") For wholesale inquiries:
+                                a(href="mailto:partners@casavolcan.com", class="text-amber-500 hover:text-amber-400 transition-colors") partners@casavolcan.com
+                        div(class="relative fade-up", style="animation-delay: 0.2s;")
+                            div(class="bg-stone-900 aspect-square")
+                                img(src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=800&q=80", alt="World Map", class="w-full h-full object-cover opacity-50")
+                                div(class="absolute inset-0 flex items-center justify-center")
+                                    div(class="text-center")
+                                        svg(class="w-16 h-16 text-amber-500 mx-auto mb-4", fill="none", stroke="currentColor", viewbox="0 0 24 24")
+                                            path(stroke-linecap="round", stroke-linejoin="round", stroke-width="1.5", d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z")
+                                            path(stroke-linecap="round", stroke-linejoin="round", stroke-width="1.5", d="M15 11a3 3 0 11-6 0 3 3 0 016 0z")
+                                        p(class="text-stone-100 font-heading text-xl") Available in 23 Countries
+                                        p(class="text-stone-500 text-sm mt-2") Premium retailers worldwide
+            footer(class="bg-stone-950 border-t border-stone-800")
+                div(class="max-w-7xl mx-auto px-6 py-16")
+                    div(class="grid md:grid-cols-4 gap-12 mb-12")
+                        div
+                            a(href="#", class="flex items-center gap-3 mb-6")
+                                svg(class="w-8 h-8 text-amber-500", viewbox="0 0 24 24", fill="currentColor")
+                                    path(d="M12 2C13.1 2 14 2.9 14 4C14 4.74 13.6 5.39 13 5.73V7H14C17.31 7 20 9.69 20 13V20C20 21.1 19.1 22 18 22H6C4.9 22 4 21.1 4 20V13C4 9.69 6.69 7 10 7H11V5.73C10.4 5.39 10 4.74 10 4C10 2.9 10.9 2 12 2Z")
+                                span(class="text-xl tracking-widest text-stone-100 uppercase font-heading") Casa Volcán
+                            p(class="text-stone-500 text-sm leading-relaxed") Artisanal tequila crafted in the heart of Jalisco. Born of volcanic earth, shaped by generations.
+                        div
+                            h4(class="text-stone-100 text-sm tracking-widest uppercase mb-6") Explore
+                            ul(class="space-y-3 text-stone-500 text-sm")
+                                li
+                                    a(href="#story", class="hover:text-amber-500 transition-colors") Our Story
+                                li
+                                    a(href="#collection", class="hover:text-amber-500 transition-colors") Collection
+                                li
+                                    a(href="#process", class="hover:text-amber-500 transition-colors") The Process
+                                li
+                                    a(href="#sustainability", class="hover:text-amber-500 transition-colors") Sustainability
+                        div
+                            h4(class="text-stone-100 text-sm tracking-widest uppercase mb-6") Connect
+                            ul(class="space-y-3 text-stone-500 text-sm")
+                                li
+                                    a(href="#", class="hover:text-amber-500 transition-colors") Press Room
+                                li
+                                    a(href="#", class="hover:text-amber-500 transition-colors") Partnerships
+                                li
+                                    a(href="#", class="hover:text-amber-500 transition-colors") Careers
+                                li
+                                    a(href="#", class="hover:text-amber-500 transition-colors") Contact
+                        div
+                            h4(class="text-stone-100 text-sm tracking-widest uppercase mb-6") Newsletter
+                            p(class="text-stone-500 text-sm mb-4") Join for exclusive releases and events.
+                            div(class="flex")
+                                input(type="email", placeholder="Your email", class="flex-1 bg-stone-900 border border-stone-700 text-stone-100 px-4 py-3 text-sm focus:border-amber-500 focus:outline-none")
+                                button(class="bg-amber-600 text-stone-950 px-4 hover:bg-amber-500 transition-colors")
+                                    svg(class="w-5 h-5", fill="none", stroke="currentColor", viewbox="0 0 24 24")
+                                        path(stroke-linecap="round", stroke-linejoin="round", stroke-width="2", d="M14 5l7 7m0 0l-7 7m7-7H3")
+                    div(class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-stone-800 gap-6")
+                        div(class="flex gap-6")
+                            a(href="#", class="text-stone-500 hover:text-amber-500 transition-colors")
+                                svg(class="w-5 h-5", fill="currentColor", viewbox="0 0 24 24")
+                                    path(d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z")
+                            |               
+                            a(href="#", class="text-stone-500 hover:text-amber-500 transition-colors")
+                                svg(class="w-5 h-5", fill="currentColor", viewbox="0 0 24 24")
+                                    path(d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z")
+                            |               
+                            a(href="#", class="text-stone-500 hover:text-amber-500 transition-colors")
+                                svg(class="w-5 h-5", fill="currentColor", viewbox="0 0 24 24")
+                                    path(d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z")
+                        p(class="text-stone-600 text-xs") © 2026 Casa Volcán. Jalisco, México. All rights reserved.
+                        p(class="text-stone-600 text-xs") Please drink responsibly. Must be 21+ to purchase.
+        script(type="text/javascript", src="js/global-23600.js?v=1776958934")
